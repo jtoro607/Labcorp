@@ -43,8 +43,7 @@ namespace Labcorp
 
         [Given(@"Search for '(.*)'")]
         public void GivenSearchForQATestAutomationDeveloper(string jobName)
-        {
-            
+        {            
             var searchfield =_driver.FindElement(By.ClassName("search-keyword"));
             ScrollTo200(_driver);
             searchfield.SendKeys(jobName);
